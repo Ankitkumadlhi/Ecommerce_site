@@ -22,6 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #Load the .env file
 load_dotenv()
 
+DB_PASSWORD = os.environ('DB_PASSWORD')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -31,8 +33,8 @@ SECRET_KEY = 'django-insecure-1pdr@khf$vyk)(zvi6xc2kt%ft=_trd=cohwtwe#916jrifa#a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-CSRF_TRUSTED_ORIGINS = []
+ALLOWED_HOSTS = ['ecommercesite-production-28fa.up.railway.app','https://ecommercesite-production-28fa.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['ecommercesite-production-28fa.up.railway.app','https://ecommercesite-production-28fa.up.railway.app/']
 
 
 # Application definition
