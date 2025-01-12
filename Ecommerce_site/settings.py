@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #Load the .env file
 # load_dotenv()
 
-DB_PASSWORD = os.environ('DB_PASSWORD')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
