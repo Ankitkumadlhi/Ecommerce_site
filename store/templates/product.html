@@ -72,11 +72,11 @@ $(document).on('click', '#add-cart', function(e){
     e.preventDefault();
     $.ajax({
         type: 'POST',
-        url: '{% url 'cart_add' %}',
+        url: '{% url "cart_add" %}',
         data: {
     product_id: $('#add-cart').val(),
     product_qty: $('#qty-cart option:selected').text(),
-    csrfmiddlewaretoken: '{{ csrf_token }}',
+    csrfmiddlewaretoken: $('meta[name="csrf-token"]').attr('content'),
     action: 'post'
         },
 

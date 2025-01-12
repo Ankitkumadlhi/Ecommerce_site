@@ -39,9 +39,9 @@ SECRET_KEY = 'django-insecure-1pdr@khf$vyk)(zvi6xc2kt%ft=_trd=cohwtwe#916jrifa#a
 DEBUG = True
 
 ALLOWED_HOSTS = ['ecommercesite-production-28fa.up.railway.app','https://ecommercesite-production-28fa.up.railway.app/']
-CSRF_TRUSTED_ORIGINS = ['https://ecommercesite-production-28fa.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://ecommercesite-production-28fa.up.railway.app']
 
-
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
