@@ -277,7 +277,7 @@ def checkout(request):
 	else:
 		# Checkout as guest
 		shipping_form = ShippingForm(request.POST or None)
-		return render(request, "=checkout.html", {"cart_products":cart_products, "quantities":quantities, "totals":totals, "shipping_form":shipping_form})
+		return render(request, "checkout.html", {"cart_products":cart_products, "quantities":quantities, "totals":totals, "shipping_form":shipping_form})
 
 	
 
